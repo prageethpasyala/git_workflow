@@ -1,2 +1,2 @@
-pet_bucket_name     = "talent-academy-pascal-petbucket"
+pet_bucket_name     = "pet-bucket-prageeth"
 pet_script_filename = "pet_info"

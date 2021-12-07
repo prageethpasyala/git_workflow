@@ -25,3 +25,8 @@ jobs:
         id: plan
         run: terraform plan
         continue-on-error: true
+
+      - name: Apply
+        id: plan
+        run: terraform plan
+        continue-on-error: true
