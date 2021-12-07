@@ -26,7 +26,11 @@ jobs:
         run: terraform plan
         continue-on-error: true
 
-      - name: Apply
-        id: plan
-        run: terraform plan
-        continue-on-error: true
+      - name: Print a greeting
+        env:
+          MY_VAR: Hi there! My name is
+          FIRST_NAME: Mona
+          MIDDLE_NAME: The
+          LAST_NAME: Octocat
+        run: |
+          echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
